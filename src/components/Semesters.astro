@@ -5,11 +5,16 @@
     
     <section id="workthumbnails">
     <div class="thumbnail">
-    <a href="https://chsserver01.org/2023/srios062023/Arrays/arrays.html"><img src="Images/thumbnail.gif" alt="VS Code" class="thumb"></a>
+    <a href="https://chsserver01.org/2023/srios062023/Arrays/arrays.html" data-tooltip="Arrays"><img src="Images/thumbnail.gif" alt="VS Code" class="thumb"></a>
+
     <a href="https://chsserver01.org/2023/srios062023/Demos/Functions/functions.html"><img src="Images/thumbnail.gif" alt="Git" class="thumb"></a>
+
 <a href="https://chsserver01.org/2023/srios062023/Activites/Markdown%20Notes%204/markdownnotes4.md">    <img src="Images/thumbnail.gif" alt="Mark Down" class="thumb"></a>
+
     <a href="https://chsserver01.org/2023/srios062023/Demos/Arrays%20Review/arraysreviewforeach.html"><img src="Images/thumbnail.gif" alt="JavaScript" class="thumb"></a>
+
 <a href="https://chsserver01.org/2023/srios062023/Activites/AFB003/afb003.html">    <img src="Images/thumbnail.gif" alt="Photoshop" class="thumb"></a>
+
    <a href="https://chsserver01.org/2023/srios062023/Activites/PaintBrushPrototype/MOBILE/paintbrushprototypes2mobile.html"> <img src="Images/thumbnail.gif" alt="Github" class="thumb"></a>
     </div>
     </section>
@@ -61,6 +66,13 @@
  align-items:center;
  flex-wrap:wrap;
  align-content:center;
+}
+.thumbnail a [data-tooltip]::after{
+background-color: red;
+content: "Tool Tip";
+}
+.thumbnail a [data-tooltip]:hover::after{
+background-color: blue;
 }
 .thumb{
  width:150px;
