@@ -1,0 +1,50 @@
+---
+import "../styles/global.css";
+import PageHeader from "../components/PageHeader.astro";
+import PageFooter from "../components/PageFooter.astro";
+import Showcase from "../components/Showcase.astro";
+import Features from "../components/Features.astro";
+import Pagecontent from "../components/Pagecontent.astro";
+import Semesters from "../components/Semesters.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title> Silvia Rios Career</title>
+        <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+<link rel="icon" type="image/png" href="Images/favicon.png">
+	</head>
+        <!-- 
+    pageheader
+    showcase
+    features
+    pagecontent
+    semesters
+    pagefooter
+    -->
+
+    <PageHeader/>
+
+    <Showcase/>
+
+
+    <Features/>
+
+
+
+
+    <Pagecontent/>
+
+
+
+    <Semesters/>
+
+
+<PageFooter/>
+
+	</body>
+</html>
