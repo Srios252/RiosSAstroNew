@@ -61,9 +61,12 @@
     margin:auto;
     padding:0 3rem 0 3rem;
     }
+    
+    
     /* End General Mobile First Styles */
    /* Media Queries */
 @media only screen and (min-width:320px){
+    
     #features{
      background-color:rgb(6, 15, 43);
     }
