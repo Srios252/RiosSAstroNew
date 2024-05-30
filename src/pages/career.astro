@@ -3,9 +3,6 @@ import "../styles/global.css";
 import PageHeader from "../components/PageHeader.astro";
 import PageFooter from "../components/PageFooter.astro";
 import Showcase from "../components/Showcase.astro";
-import Features from "../components/Features.astro";
-import Pagecontent from "../components/Pagecontent.astro";
-import Semesters from "../components/Semesters.astro";
 ---
 
 <!doctype html>
@@ -15,7 +12,7 @@ import Semesters from "../components/Semesters.astro";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title> Silvia Rios Career</title>
-        <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+        <link rel="icon" type="image/svg+xml" href="/Images/favicon.svg">
 <link rel="icon" type="image/png" href="Images/favicon.png">
 	</head>
         <!-- 
@@ -34,15 +31,44 @@ import Semesters from "../components/Semesters.astro";
 <div class="container">
     <h1>Career</h1>
     <p>I have taken Web Design, Intro To CS and JavaScript, and Web Application Development. In these courses we coded various portfolios, games, and even worked on our photoshop and graphic design skills. I have been attending CHS for the past three years and will be as I enter my senior year of high school. I have taken mulitple AP courses, participated in CHS Cheer and Track, been a founder of our Youth Wellness Council as well as a member of many other clubs. I have a 4.3 GPA all while working part time and taking college courses throughout the summer. </p>
-    <a href="https://docs.google.com/document/d/1n2unudGDNG4quE0j4kcSaGmSA5_IwgBkKGO35io4Ipg/edit?usp=sharing">
-    <img src="Images/resume.png" alt=Resume></a> <img src=coverletter.png" alt="">
+
+<div class="career">
+        <a href="https://docs.google.com/document/d/1n2unudGDNG4quE0j4kcSaGmSA5_IwgBkKGO35io4Ipg/edit?usp=sharing">
+        <img src="/Images/resume.png" alt=Resume></a>
+
+        <div class="images">
+
+<a href="https://docs.google.com/document/d/1NfmJjaMD672TSoxstJLsviZY3uZ0l28m_8ODHGibq80/edit?usp=sharing"><img src="/Images/coverletter.png" alt="cover letter"></a>
+
+<a href="https://docs.google.com/document/d/1Pzy_5j83IER7Br_qmHB4C6r7dU3rGLrXQhzGkPkMd0U/edit?usp=sharing"><img src="/Images/references.png" alt="References"></a>
+
+<a href="https://drive.google.com/file/d/1PzuA0kuQzG08u_5rsFzencuVpNzmyeXv/view?usp=sharing"><img src="application.png" alt="application"></a>
+
+        </div>
+</div>
 
 </div>
 
-
-
-
 <PageFooter/>
+<style>
+    .container img{
+        width:450px;
+        margin:auto;
+        display:block;
+    }
+    .career{
+        display:flex;
+        flex-direction:row-reverse;
+    }
+    .images{
+        display:flex;
+        flex-direction:column;
+        margin:auto;
+    }
+    .images img{
+        width:50px;
 
+    }
+</style>
 	</body>
 </html>
